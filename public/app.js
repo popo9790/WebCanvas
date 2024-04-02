@@ -43,7 +43,6 @@ var CumulativePoints = [];
   $("#ColorR").on("input", function () {
     cR = $(this).val();
     SliderColor = "rgb(" + cR + ", " + cG + ", " + cB + ")";
-
     changePalette();
   });
 
@@ -344,11 +343,11 @@ var CumulativePoints = [];
     tmpCtx.drawImage(Canvas, 0, 0);
 
     var ImgData = tmpCanvas.toDataURL("image/png");
-    var DownloadLink = document.createElement("a");
-    DownloadLink.href = ImgData;
-    DownloadLink.download = "Canvas_download.png";
+    var Download = document.createElement("a");
+    Download.href = ImgData;
+    Download.download = "Canvas_download.png";
 
-    DownloadLink.click();
+    Download.click();
     console.log("Download");
   });
 }
