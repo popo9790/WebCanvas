@@ -1,0 +1,189 @@
+body {
+  background-color: rgb(241, 241, 226);
+}
+
+.Main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+  margin: 20px;
+}
+
+.Tool-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: 50em;
+  width: 30em;
+  z-index: 101;
+}
+
+.Canvas-base {
+  background-color: rgb(217, 217, 217);
+  border-radius: 1em;
+}
+
+.Canvas-cursor {
+  cursor: default;
+}
+
+.Tool-base {
+  background-color: rgb(217, 217, 217);
+}
+
+.Pic-tool {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 17em;
+  width: 8em;
+  border-radius: 1em;
+  margin: 0 10px 0 0;
+}
+
+.Color-tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 17em;
+  width: 12em;
+  border-radius: 1em;
+  margin: 0 10px 0 10px;
+}
+
+.Color-selector {
+  height: 150px;
+  width: 150px;
+  border: none;
+  border-radius: 2px;
+  margin: 3px;
+  padding: 10px;
+
+  cursor: crosshair;
+}
+
+.Brush-size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 17em;
+  width: 5em;
+  border-radius: 1em;
+  margin: 0 0 0 10px;
+}
+
+.Brush-size-slider {
+  appearance: slider-vertical;
+  height: 90%;
+  overflow: hidden;
+  background: none;
+}
+
+.ReUndo-tool {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 31em;
+  width: 8em;
+  border-radius: 1em;
+  margin: 0 10px 0 0;
+}
+
+.Brush-tool {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-around;
+
+  height: 31em;
+  width: 18em;
+  border-radius: 1em;
+  margin: 0 0 0 10px;
+}
+
+.Brush-button-top {
+  height: 6em;
+  width: 6em;
+  border-radius: 1em;
+  margin: 15px 10px 10px 10px;
+  background-color: rgb(241, 241, 226);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.Tool-button {
+  height: 5em;
+  width: 5em;
+  border-radius: 1em;
+  background-color: rgb(241, 241, 226);
+  overflow: hidden;
+}
+
+.Brush-button {
+  height: 6em;
+  width: 6em;
+  border-radius: 1em;
+  margin: 10px;
+  background-color: rgb(241, 241, 226);
+  overflow: hidden;
+}
+
+.Font-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 6em;
+  width: 13em;
+  background-color: rgb(241, 241, 226);
+  border-radius: 1em;
+  margin: 10px;
+
+  overflow: hidden;
+}
+
+.Font-selector {
+  height: 60%;
+  width: 65%;
+  border: none;
+  background-color: rgb(241, 241, 226);
+  outline: none;
+  font-size: small;
+}
+
+.Font-size-selector {
+  height: 60%;
+  width: 20%;
+  border: none;
+  background-color: rgb(241, 241, 226);
+  outline: none;
+  font-size: medium;
+}
+
+.Button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: rgb(241, 241, 226);
+}
+
+.Button-pic {
+  height: 70%;
+  width: 70%;
+  border: none;
+}
+
+.Button-pic:hover {
+  background-color: rgb(204, 204, 190);
+}

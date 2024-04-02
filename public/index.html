@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebCanvas-HW-111062114</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="jQuery-v371.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="MainContainer" class="Main-container">
+      <div id="CanvasCursor" class="Canvas-cursor">
+        <canvas
+          id="Canvas"
+          height="800"
+          width="950"
+          class="Canvas-base"
+        ></canvas>
+      </div>
+      <div class="Tool-container">
+        <div class="Tool-base Pic-tool">
+          <div class="Tool-button">
+            <button id="UploadBtn" class="Button">
+              <img src="./img/upload.png" class="Button-pic" alt="UploadBtn" />
+            </button>
+            <input
+              type="file"
+              id="Upload"
+              accept="img/*"
+              style="display: none"
+            />
+          </div>
+          <div class="Tool-button">
+            <button id="DownloadBtn" class="Button">
+              <img src="./img/download.png" class="Button-pic" alt="download" />
+            </button>
+          </div>
+        </div>
+        <div class="Tool-base Color-tool">
+          <canvas id="ColorSelector" class="Color-selector"></canvas>
+          <label for="ColorSelectoLabel">R</label>
+          <input
+            type="range"
+            id="ColorR"
+            name="ColorR"
+            min="0"
+            max="255"
+            value="0"
+            step="1"
+          />
+          <label for="ColorSelectoLabel">G</label>
+          <input
+            type="range"
+            id="ColorG"
+            name="ColorG"
+            min="0"
+            max="255"
+            value="0"
+            step="1"
+          />
+          <label for="ColorSelectoLabel">B</label>
+          <input
+            type="range"
+            id="ColorB"
+            name="ColorB"
+            min="0"
+            max="255"
+            value="0"
+            step="1"
+          />
+        </div>
+        <div class="Tool-base Brush-size">
+          <input
+            type="range"
+            id="BrushSize"
+            name="BrushSize"
+            class="Brush-size-slider"
+            min="1"
+            max="60"
+            value="5"
+            step="1"
+          />
+        </div>
+        <div class="Tool-base ReUndo-tool">
+          <div class="Tool-button">
+            <button id="Redo" class="Button">
+              <img src="./img/redo.png" class="Button-pic" alt="redo" />
+            </button>
+          </div>
+          <div class="Tool-button">
+            <button id="Undo" class="Button">
+              <img src="./img/undo.png" class="Button-pic" alt="undo" />
+            </button>
+          </div>
+          <div class="Tool-button">
+            <button id="Reset" class="Button">
+              <img src="./img/reset.png" class="Button-pic" alt="reset" />
+            </button>
+          </div>
+        </div>
+        <div class="Tool-base Brush-tool">
+          <div class="Brush-button-top">
+            <button id="NormalBrush" class="Button">
+              <img src="./img/brush.png" class="Button-pic" alt="NormalBrush" />
+            </button>
+          </div>
+          <div class="Brush-button-top">
+            <button id="Eraser" class="Button">
+              <img src="./img/eraser.png" class="Button-pic" alt="Eraser" />
+            </button>
+          </div>
+          <div class="Brush-button">
+            <button id="CirBrush" class="Button">
+              <img src="./img/circle.png" class="Button-pic" alt="CirBrush" />
+            </button>
+          </div>
+          <div class="Brush-button">
+            <button id="TriBrush" class="Button">
+              <img src="./img/triangle.png" class="Button-pic" alt="TriBrush" />
+            </button>
+          </div>
+          <div class="Brush-button">
+            <button id="RectBrush" class="Button">
+              <img
+                src="./img/rectangle.png"
+                class="Button-pic"
+                alt="RectBrush"
+              />
+            </button>
+          </div>
+          <div class="Brush-button">
+            <button id="Text" class="Button">
+              <img src="./img/text.png" class="Button-pic" alt="Text" />
+            </button>
+          </div>
+          <!-- Font Menu -->
+          <div class="Font-menu">
+            <select id="TextFont" class="Font-selector">
+              <option value="Arial">Arial</option>
+              <option value="Times New Roman">Times New Roman</option>
+            </select>
+            <input
+              type="number"
+              id="TextSize"
+              class="Font-size-selector"
+              min="8"
+              max="72"
+              value="16"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
