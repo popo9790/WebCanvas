@@ -40,7 +40,6 @@
     選取文字工具之後在畫布中點擊就會出現輸入的文字匡，輸入之後按下“Enter”後就會顯示在畫布上方。
     ![text](https://imgur.com/ivfXk3K)
     文字調整提供「Arial」「Times New Roman」兩種選擇，字體最大可以調整到72。
-    ![text](https://imgur.com/undefined)
 
     筆刷工作區的左側是針對畫布的操作，像是Redo、Undo、Reset。
     ![text](https://imgur.com/FisVsSK)
